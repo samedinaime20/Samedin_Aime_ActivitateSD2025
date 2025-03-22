@@ -21,5 +21,13 @@
     <ClCompile Include="Pregatire1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pregatire2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pregatire2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

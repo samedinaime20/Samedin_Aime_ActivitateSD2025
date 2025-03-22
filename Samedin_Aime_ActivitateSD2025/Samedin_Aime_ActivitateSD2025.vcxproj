@@ -129,6 +129,10 @@
   <ItemGroup>
     <ClCompile Include="Intalnire1.c" />
     <ClCompile Include="Pregatire1.c" />
+    <ClCompile Include="Pregatire2.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pregatire2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
