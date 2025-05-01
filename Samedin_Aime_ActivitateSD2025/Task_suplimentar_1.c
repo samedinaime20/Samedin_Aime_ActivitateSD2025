@@ -12,19 +12,36 @@ struct Casa initializare(int nr, const char* strada, int nrLocatari, int varsta)
 	struct Casa a1;
 	a1.nr = nr;
 	a1.strada = (char*)malloc(sizeof(char) * (strlen(strada) + 1));
-	strcpy_s(a1.strada, strlen(strada) + 1), strada);
+	strcpy_s(a1.strada, strlen(strada) + 1, strada);
 	a1.nrLocatari = nrLocatari;
 	a1.varsta = varsta;
 	return a1;
 }
+void afisareVector(struct Casa* a, int nrElemente) {
+	for (int i = 0; i < nrElemente; i++) {
+		afisare(a[i]);
+	}
+}
+
+void copierePrimeleNElemente(struct Casa** a, int nrElemente, int nrElementeCopiate) {
+	struct Casa* c = (struct Casa*)malloc(sizeof(struct Casa) * nrElementeCopiate);
+	for (int i = 0; i < nrElementeCopiate; i++) {
+		c[i] = a[i];
+
+	}
+}
+
 void afisare(struct Casa a) {
 	printf("Casa cu nr %d de pe strada %s are %d locatari cu varstele de %d", a.nr, a.strada, a.nrLocatari, a.varsta);
 }
+
+
 void modificaLocatari(struct Casa* a2, int noiLocatari) {
 	if (noiLocatari > 0) {
 		a2->nrLocatari = noiLocatari;
 	}
 }
+
 void dezalocare(struct Casa* a3) {
 	if (a3->strada != NULL) {
 		free(a3->strada);
