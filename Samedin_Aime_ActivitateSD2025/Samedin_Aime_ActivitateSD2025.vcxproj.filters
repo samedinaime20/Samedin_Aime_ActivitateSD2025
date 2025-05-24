@@ -42,5 +42,11 @@
     <ClCompile Include="heap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HeapEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ABC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

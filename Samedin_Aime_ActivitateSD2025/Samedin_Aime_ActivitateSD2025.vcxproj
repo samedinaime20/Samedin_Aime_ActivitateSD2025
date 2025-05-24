@@ -127,8 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ABC.c" />
     <ClCompile Include="exercitiu.c" />
     <ClCompile Include="heap.c" />
+    <ClCompile Include="HeapEx.c" />
     <ClCompile Include="Intalnire1.c" />
     <ClCompile Include="Pregatire1.c" />
     <ClCompile Include="Pregatire2.c" />
